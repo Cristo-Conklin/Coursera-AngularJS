@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="Assignment1">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Coursera 1</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+
+  </head>
+  <body>
+	<h1>My first AngularJS Assignment</h1>  
+	<div ng-controller="MyFirstController">
+		Foods to eat: {{food}}
+		<br>
+		<input type="text" ng-model="food" ng-blur="upper()" >
+		<button type="button" ng-click="displayBloat()">Check If Too Much</button>
+		<hr>
+		<div>Bloat or not: {{bloat}}</div>
+
+	</div>
+
+  </body>
+</html>
